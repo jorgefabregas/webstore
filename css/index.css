@@ -19,8 +19,8 @@
     background-color: #000000;
 }
 .header .menu_container {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .logo, .icon_menu {
     margin: 8px;
@@ -51,6 +51,8 @@ justify-content: space-between;
     padding: 0;
     margin: 0;
     height: 40px;
+    cursor: pointer;
+
 }
 .menu_link {
     display: block;
