@@ -64,7 +64,7 @@
     list-style: none;
     font-size: 1rem;
 }
-.menu_link :hover {
+.menu :hover {
     background: #fff;
     color: black;
 }
