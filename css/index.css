@@ -96,7 +96,10 @@
     cursor: pointer;
 }
 .banner {
-    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+    display: block;
+    
 }
 .find {
     width: 200px;
