@@ -18,19 +18,54 @@
         <span class="icon_cart" id="btn_cart"><i class="fas fa-shopping-cart"></i></span>
         <nav class="nav" id="nav">
           <ul class="menu" id="menu">
-            <li class="menu_item"><a class="menu_link" href="">Smartphones</a></li>
-            <li class="menu_item"><a class="menu_link" href="">Tablets</a></li>
-            <li class="menu_item"><a class="menu_link" href="">Laptops</a></li>
-            <li class="menu_item"><a class="menu_link" href="">Desktops</a></li>
+            <li class="menu_item"><a class="menu_link" href="#">Smartphones</a></li>
+            <li class="menu_item"><a class="menu_link" href="#">Tablets</a></li>
+            <li class="menu_item"><a class="menu_link" href="#">Laptops</a></li>
+            <li class="menu_item"><a class="menu_link" href="#">Desktops</a></li>
           </ul>
         </nav>
       </div>
       <div class="search_container">
+        <label for="categName">Search by Category
+          <input type="text" name="search" id="categName">
+        </label>
+  
         <input type="search" name="find" id="find" class="find" value="Search">
         <span class="icon_menu" id="btn_menu"><i class="fas fa-bars"></i></span>
       </div>
     </header>
+
     <img src="/img/Technopolis-Banner.gif" alt="" class="banner">
+
+    <p>Filters</p>
+
+    <form class="filters" id="filersForm">
+      <label for="brand">Sort by brand:
+        <select name="brand" id="brand">
+          <option value="apple" selected>Apple</option>
+          <option value="samsung" selected>Samsung</option>
+          <option value="lenovo" selected>Lenovo</option>
+        </select>
+      </label>
+      <label for="model">Sort by model:
+        <select name="model" id="model">
+          <option value="iphone" selected>iPhone</option>
+          <option value="galaxy" selected>Galaxy</option>
+          <option value="ideapad" selected>IdeaPad</option>
+        </select>
+      </label>
+      <label for="displaySize">Sort by display size:
+        <select name="size" id="size">
+          <option value="6.3" selected>iPhone</option>
+          <option value="15.6" selected>Galaxy</option>
+          <option value="21.5 " selected>IdeaPad</option>
+        </select>
+      </label>
+
+     <div>
+       <button type="submit">Filter</button>
+     </div>
+    </form>
 
     <section class="arts_container" id="art_container">
       <article class="smartphones" id="smartphones">
