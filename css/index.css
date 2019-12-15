@@ -15,6 +15,7 @@
     margin: auto;
 }
 .header {
+    width: 100%;
     height: auto;
     background-color: #000000;
 }
@@ -76,14 +77,10 @@
     display: flex;
     justify-content: space-between;
 }
-.find, .icon_cart {
-    border: 0;
-    margin: 10px;
-    font-size: 1rem;
-}
 .icon_cart {
     border: 0;
     margin: 10px;
+    font-size: 1rem;
     margin-top: 40px;
     display: block;
     width: 40px;
@@ -101,51 +98,33 @@
     display: block;
     
 }
-.find {
-    width: 200px;
-    height: 30px;
-    font-family: 'Roboto', sans-serif;
-    padding: 0 0 0 5px;
-}
 .arts_container {
-    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    margin: 0 2rem;
 }
 .arts_container h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin: 1rem;
+    margin: 1em;
 }
 .smartphones, .tablets, .laptops, .desktops {
     margin-top: 2rem;
     background-color: white;
-    display: block;
     overflow: hidden;
     max-width: 30em;
     text-align: center;
     box-shadow: 5px 5px 1em rgba(0, 0, 0, .5);
-    border-radius: 0.5em;
-}
-.place-picture {
-    text-align: center;
-    overflow: hidden;
+    border-top: 0.1em solid rgb(53, 104, 3);
+    border-bottom: 0.1em solid rgb(53, 104, 3);
 }
 .place-img {
-    max-width: 100%;
-}
-.arts_button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none; 
-    padding: 0.5rem 1rem;
-    border: 0;
-    border: 2px solid black;
-    padding: 1rem;
-    margin: 1rem;
-    text-transform: uppercase;
-    background-color: #f1ecec;
-    border-radius: 25px;
+    width: 50%;
+    margin: 0.5em;
+    text-align: center;
+    overflow: hidden;
 }
 
 

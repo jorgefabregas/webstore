@@ -6,8 +6,7 @@
     <title>Technopolis Web Store</title>
     <meta name="description" content="[A short description]">
     <meta name="author" content="[Your Name]">
-    <script src="https://kit.fontawesome.com/a0ac82bfd7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+    <script src="https://kit.fontawesome.com/a0ac82bfd7.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Material design icons are use below. Remove this line if using other font packs or images. Details on Material Design icons can be found here: https://material.io/resources/icons/ -->
     <link rel="stylesheet" href="css/index.css">
   </head>
@@ -27,17 +26,13 @@
       </div>
       <div class="search_container">
         <label for="categName">Search by Category
-          <input type="text" name="search" id="categName">
+          <input type="text" name="search" id="categName" class="search">
         </label>
-  
-        <input type="search" name="find" id="find" class="find" value="Search">
-        <span class="icon_menu" id="btn_menu"><i class="fas fa-bars"></i></span>
+          <span class="icon_menu" id="btn_menu"><i class="fas fa-bars"></i></span>
       </div>
     </header>
 
     <img src="/img/Technopolis-Banner.gif" alt="" class="banner">
-
-    <p>Filters</p>
 
     <form class="filters" id="filersForm">
       <label for="brand">Sort by brand:
@@ -68,34 +63,21 @@
     </form>
 
     <section class="arts_container" id="art_container">
-      <article class="smartphones" id="smartphones">
+      <div class="smartphones" id="smartphones">
         <h1>Smartphones</h1>
-        <div class="place-picture">
-            <img src="/img/Smartphones/main smartphones.png" alt="Smartphones" class="place-img">
-        </div>
-        <button id="smartphonesbut" class="arts_button">Shop Now</button>
-      </article>
-      <article class="tablets" id="tablets">
+      </div>
+      <div>
+      </div>
+      
+      <div class="tablets" id="tablets">
         <h1>Tablets</h1>
-        <div class="place-picture">
-            <img src="/img/Tablets/main tablets.png" alt="Tablets" class="place-img">
-        </div>
-        <button id="tabletssbut" class="arts_button">Shop Now</button>
-      </article>
-      <article class="laptops" id="laptops">
-          <h1>Laptops</h1>
-          <div class="place-picture">
-              <img src="/img/Laptops/main laptops.png" alt="Laptops" class="place-img">
-          </div>
-          <button id="laptopsbut" class="arts_button">Shop Now</button>
-        </article>
-        <article class="desktops" id="desktops">
-          <h1>Desktops</h1>
-          <div class="place-picture">
-              <img src="/img/Desktops/Main desktops.png" alt="Desktops" class="place-img">
-          </div>
-          <button id="desktopsbut" class="arts_button">Shop Now</button>
-        </article>
+      </div>
+      <div class="laptops" id="laptops">
+        <h1>Laptops</h1>
+      </div>
+      <div class="desktops" id="desktops">
+        <h1>Desktops</h1>
+      </div>
     </section>
 
   
