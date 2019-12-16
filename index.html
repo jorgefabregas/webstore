@@ -25,8 +25,8 @@
         </nav>
       </div>
       <div class="search_container">
-        <label for="categName">Search by Category
-          <input type="text" name="search" id="categName" class="search">
+        <label for="categName" class="search">Search
+          <input type="text" name="search" id="categName">
         </label>
           <span class="icon_menu" id="btn_menu"><i class="fas fa-bars"></i></span>
       </div>
@@ -35,25 +35,27 @@
     <img src="/img/Technopolis-Banner.gif" alt="" class="banner">
 
     <form class="filters" id="filersForm">
-      <label for="brand">Sort by brand:
+      <label for="brand">Sort by:
         <select name="brand" id="brand">
+          <option value="brand" selected>Brand</option>
           <option value="apple" selected>Apple</option>
           <option value="samsung" selected>Samsung</option>
           <option value="lenovo" selected>Lenovo</option>
         </select>
       </label>
-      <label for="model">Sort by model:
+      <label for="model">Sort by:
         <select name="model" id="model">
+          <option value="model" selected>Model</option>
           <option value="iphone" selected>iPhone</option>
           <option value="galaxy" selected>Galaxy</option>
           <option value="ideapad" selected>IdeaPad</option>
         </select>
       </label>
-      <label for="displaySize">Sort by display size:
+      <label for="displaySize">Sort by:
         <select name="size" id="size">
-          <option value="6.3" selected>iPhone</option>
-          <option value="15.6" selected>Galaxy</option>
-          <option value="21.5 " selected>IdeaPad</option>
+          <option value="6.3" selected>6.3"</option>
+          <option value="15.6" selected>15.6"</option>
+          <option value="21.5 " selected>21.5"</option>
         </select>
       </label>
 
@@ -309,11 +311,8 @@
           <label id="price" class="price">$999.99</label>
           <a href="#" class="cart_button">Add to Cart</a> 
         </div>
-
       </section>
     </main>
-
-  
     
 
     <script src="js/index.js"></script>

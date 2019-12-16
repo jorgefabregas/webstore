@@ -34,7 +34,6 @@ body {
     width: 40px;
     height: 40px;
     font-size: 30px;
-    background: #999;
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
@@ -78,6 +77,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.search {
+    color: white;
+    font-size: 0.8rem;
+    margin: 1.1rem;
+}
 .icon_cart {
     border: 0;
     margin: 10px;
@@ -86,8 +90,8 @@ body {
     display: block;
     width: 40px;
     height: 40px;
+    color: white;
     font-size: 30px;
-    background: #999;
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
@@ -96,6 +100,10 @@ body {
 .banner {
     margin: 10px auto;
     display: block;
+}
+.filters {
+    display: block;
+    font-size: 0.8rem;
 }
 .arts_container {
     /* display: grid; */
@@ -123,7 +131,8 @@ body {
     background-color: white;
 }
 .smart_container img {
-    width: 60%;
+    width: auto;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
@@ -168,14 +177,17 @@ body {
         height: 80px;
     }
     .arts_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        margin: 0 2rem;
+    }
+    }
+@media screen and (min-width: 1024px) {
+    .arts_container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 3rem;
         margin: 0 2rem;
-    }    
-}
-@media screen and (min-width: 1440px) {
-    .arts_container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .menu_link {
         padding: 40px;
