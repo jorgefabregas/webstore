@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
 }
-.body {
+body {
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(236, 236, 233);
 }
 .logo {
     width: 80px;
@@ -48,7 +50,6 @@
 }
 .menu {
     list-style: none;
-    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     height: 40px;
@@ -93,19 +94,16 @@
     cursor: pointer;
 }
 .banner {
-    max-width: 900px;
     margin: 10px auto;
     display: block;
-    
 }
 .arts_container {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
     margin: 0 2rem;
 }
 .arts_container h1 {
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     margin: 1em;
@@ -120,14 +118,50 @@
     border-top: 0.1em solid rgb(53, 104, 3);
     border-bottom: 0.1em solid rgb(53, 104, 3);
 }
-.place-img {
-    width: 50%;
-    margin: 0.5em;
-    text-align: center;
-    overflow: hidden;
+.smart_container {
+    margin-top: 1.5rem;
+    background-color: white;
 }
-
-
+.smart_container img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.favor_button {
+    display: flex;
+    margin-left: 90%;
+    padding: 0.5rem 0.5rem 0 0;
+    font-size: 1.2rem;
+    color: sandybrown;
+}
+.smart_container h2 {
+    font-size: 1.7rem;
+    color: red;
+    padding: 0.5rem 1rem;
+}
+.smart_container ul {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0 1rem;
+    line-height: 20px;
+}
+.smart_container label {
+    font-size: 2rem;
+    font-weight: 700;
+    color: red;
+    margin-left: 3.4em;
+}
+.cart_button {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none; 
+    text-align: center;
+    background-color: rgb(3, 3, 3);
+    color: #ffffff;
+    padding: 0.3em 0em;
+  }
+  
 @media screen and (min-width: 760px) {
     .menu_link {
         padding: 15px;
